@@ -661,8 +661,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 48px
           <div class="sc-body"><div class="pg pg-prof">
             <div class="pr-top">
               <div class="pr-av">&#128100;</div>
-              <div class="pr-name">RayXpress</div>
-              <div class="pr-email">support@rayxp.com</div>
+              <div class="pr-name">Ahmed Rizwan</div>
+              <div class="pr-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="53323b3e363713363e323a3f7d303c3e">[email&#160;protected]</a></div>
             </div>
             <div class="pr-stats">
               <div class="pr-stat"><div class="pr-sn">28</div><div class="pr-sl">Orders</div></div>
@@ -897,7 +897,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 48px
       <div class="contact-items">
         <div class="contact-item rv"><div class="ci-ico">&#127968;</div><div><div class="ci-lbl">Address</div><div class="ci-val">No NS104, 1st Floor, Nugasewana Building,<br>Bandarawela, Sri Lanka</div></div></div>
         <div class="contact-item rv"><div class="ci-ico">&#128247;</div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a href="tel:+94776691157">+94 77 669 1157</a><br><a href="tel:+94704804077">+94 70 480 4077</a></div></div></div>
-        <div class="contact-item rv"><div class="ci-ico">&#128140;</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:support@rayxp.com">support@rayxp.com</a></div></div></div>
+        <div class="contact-item rv"><div class="ci-ico">&#128140;</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection#bfcccacfcfd0cdcbffcddec6c7cf91dcd0d2"><span class="__cf_email__" data-cfemail="91e2e4e1e1fee3e5d1e3f0e8e9e1bff2fefc">[email&#160;protected]</span></a></div></div></div>
       </div>
       <div style="margin-top:22px">
         <div style="font-size:.72rem;font-weight:700;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">Follow Us</div>
@@ -945,7 +945,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 48px
       <li><a href="https://play.google.com/store/apps/details?id=com.rayxpress.partner" target="_blank">Partner App (Android)</a></li>
     </ul></div>
     <div class="ft-col"><h5>Contact</h5><ul>
-      <li><a href="mailto:support@rayxp.com">support@rayxp.com</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#8cfff9fcfce3fef8ccfeedf5f4fca2efe3e1"><span class="__cf_email__" data-cfemail="66151316160914122614071f1e164805090b">[email&#160;protected]</span></a></li>
       <li><a href="tel:+94776691157">+94 77 669 1157</a></li>
       <li><a href="tel:+94704804077">+94 70 480 4077</a></li>
       <li><a href="#coverage">Bandarawela, UVA</a></li>
@@ -956,6 +956,192 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:52px 48px
     <span>Made with &#10084;&#65039; in Sri Lanka &#127473;&#127472;</span>
   </div>
 </footer>
+
+<!-- ─── SMART APP REDIRECT OVERLAY ─── -->
+<div id="rx-redirect" style="
+  display:none;position:fixed;inset:0;z-index:10000;
+  background:rgba(9,7,5,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  flex-direction:column;align-items:center;justify-content:center;
+  font-family:'Plus Jakarta Sans',sans-serif;text-align:center;padding:32px;
+  animation:fadeIn .35s ease both;
+">
+
+  <!-- RayXpress Logo -->
+  <div style="width:76px;height:76px;background:#FF3319;border-radius:22px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 0 0 12px rgba(255,51,25,.1),0 0 40px rgba(255,51,25,.35)">
+    <svg width="46" height="46" viewBox="0 0 22 22" fill="none">
+      <path d="M3 4h9a4 4 0 0 1 0 8H8l5 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="7" cy="12" r="1.2" fill="#fff"/>
+    </svg>
+  </div>
+
+  <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.7rem;color:#fff;letter-spacing:-.02em;margin-bottom:4px">RayXpress</div>
+  <div style="font-size:.85rem;color:#5A4A3E;margin-bottom:32px;font-weight:500">Food Delivered Fast &bull; UVA Sri Lanka</div>
+
+  <!-- Store icon + message (filled in by JS) -->
+  <div id="rx-store-badge" style="
+    display:inline-flex;align-items:center;gap:12px;
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+    border-radius:16px;padding:14px 22px;margin-bottom:10px;
+  ">
+    <div id="rx-store-icon" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:1.5rem"></div>
+    <div style="text-align:left">
+      <div id="rx-store-name" style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;color:#fff"></div>
+      <div id="rx-store-sub" style="font-size:.76rem;color:#8A7A6E;margin-top:2px"></div>
+    </div>
+  </div>
+
+  <!-- Countdown ring -->
+  <div style="position:relative;width:96px;height:96px;margin:24px auto 10px">
+    <svg width="96" height="96" style="transform:rotate(-90deg);overflow:visible">
+      <!-- Track -->
+      <circle cx="48" cy="48" r="42" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="5"/>
+      <!-- Progress ring — starts full (0) and depletes to full circumference (264) as time passes -->
+      <circle id="rx-ring" cx="48" cy="48" r="42" fill="none" stroke="#FF3319" stroke-width="5"
+        stroke-linecap="round"
+        stroke-dasharray="263.9"
+        stroke-dashoffset="0"
+        style="transition:stroke-dashoffset 1s linear;filter:drop-shadow(0 0 6px rgba(255,51,25,.7))"/>
+    </svg>
+    <!-- Number in centre -->
+    <div id="rx-count" style="
+      position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+      font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:#fff;
+    ">5</div>
+  </div>
+
+  <div style="font-size:.8rem;color:#5A4A3E;margin-bottom:28px">
+    Redirecting automatically in <span id="rx-sec" style="color:#8A7A6E;font-weight:600">5</span> seconds&hellip;
+  </div>
+
+  <!-- Buttons -->
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+    <a id="rx-go-btn" href="#" style="
+      display:inline-flex;align-items:center;gap:9px;
+      background:#FF3319;color:#fff;padding:13px 28px;border-radius:100px;
+      font-weight:700;font-size:.93rem;text-decoration:none;
+      box-shadow:0 8px 28px rgba(255,51,25,.4);
+      border:none;cursor:pointer;font-family:inherit;
+    ">Open App Store Now</a>
+    <button id="rx-skip-btn" style="
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+      color:#8A7A6E;padding:13px 28px;border-radius:100px;
+      font-weight:600;font-size:.93rem;cursor:pointer;font-family:inherit;
+      transition:background .2s,color .2s;
+    ">Stay on Website</button>
+  </div>
+
+</div>
+
+<style>
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+</style>
+
+<script>
+// ─── SMART 5-SECOND APP REDIRECT ─────────────────────────────────────────────
+(function(){
+  var IOS_URL     = 'https://apps.apple.com/lk/app/rayxpress/id6751746112';
+  var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.rayxpress.customer';
+  var CIRCUM      = 263.9; // 2 * PI * 42
+
+  var ua        = navigator.userAgent || '';
+  var isIOS     = /iPhone|iPad|iPod/i.test(ua);
+  var isAndroid = /Android/i.test(ua);
+  var isMobile  = isIOS || isAndroid;
+
+  // On desktop: show overlay for both (visitor may be on any device)
+  // Show regardless — visitors on desktop can still choose. Auto-redirect only on mobile.
+  var storeURL  = isIOS ? IOS_URL : ANDROID_URL;
+  var storeName = isIOS ? 'App Store' : 'Google Play';
+
+  // Build store icon SVG
+  var iconHTML = isIOS
+    ? '<svg width="24" height="28" viewBox="0 0 28 34" fill="white"><path d="M23.1 18.0c-.05-4.18 3.41-6.18 3.57-6.27-1.95-2.84-4.97-3.23-6.05-3.27-2.56-.26-5.03 1.51-6.33 1.51-1.31 0-3.33-1.47-5.48-1.43-2.82.05-5.44 1.64-6.88 4.16C-.52 17.2 1.52 24.4 4.38 28.4c1.43 2.05 3.12 4.34 5.34 4.25 2.15-.09 2.96-1.38 5.55-1.38 2.58 0 3.31 1.38 5.57 1.34 2.32-.04 3.79-2.08 5.19-4.14 1.65-2.37 2.33-4.67 2.36-4.79-.05-.03-4.82-1.84-4.86-7.33zM18.9 5.48C20.1 3.97 20.9 1.87 20.64.01c-1.84.09-4.06 1.23-5.37 2.64-1.17 1.28-2.19 3.31-1.91 5.27 2.03.16 4.12-1.05 5.54-2.44z"/></svg>'
+    : '<svg width="22" height="26" viewBox="0 0 28 32" fill="none"><path d="M1.5 0.8L15.8 16L1.5 31.2C0.9 30.9 0.5 30.2 0.5 29.3V2.7C0.5 1.8 0.9 1.1 1.5 0.8Z" fill="#4285F4"/><path d="M21.0 10.7L16.8 15.1L1.5 0.8C2.1 0.5 2.9 0.5 3.7 1.0L21.0 10.7Z" fill="#EA4335"/><path d="M21.0 21.3L3.7 31.0C2.9 31.5 2.1 31.5 1.5 31.2L16.8 16.9L21.0 21.3Z" fill="#FBBC04"/><path d="M27.0 14.0C27.5 14.6 27.5 15.4 27.0 16.0L21.0 21.3L16.8 15.9L16.8 16.1L21.0 10.7L27.0 14.0Z" fill="#34A853"/></svg>';
+
+  // If desktop (non-mobile), show both store options side by side instead
+  if (!isMobile) {
+    // Build a "choose your store" state
+    storeURL  = IOS_URL; // default link to iOS; user can pick
+    storeName = 'App Store';
+    iconHTML  = '<svg width="24" height="28" viewBox="0 0 28 34" fill="white"><path d="M23.1 18.0c-.05-4.18 3.41-6.18 3.57-6.27-1.95-2.84-4.97-3.23-6.05-3.27-2.56-.26-5.03 1.51-6.33 1.51-1.31 0-3.33-1.47-5.48-1.43-2.82.05-5.44 1.64-6.88 4.16C-.52 17.2 1.52 24.4 4.38 28.4c1.43 2.05 3.12 4.34 5.34 4.25 2.15-.09 2.96-1.38 5.55-1.38 2.58 0 3.31 1.38 5.57 1.34 2.32-.04 3.79-2.08 5.19-4.14 1.65-2.37 2.33-4.67 2.36-4.79-.05-.03-4.82-1.84-4.86-7.33zM18.9 5.48C20.1 3.97 20.9 1.87 20.64.01c-1.84.09-4.06 1.23-5.37 2.64-1.17 1.28-2.19 3.31-1.91 5.27 2.03.16 4.12-1.05 5.54-2.44z"/></svg>';
+  }
+
+  // Populate overlay
+  document.getElementById('rx-store-icon').innerHTML  = iconHTML;
+  document.getElementById('rx-store-name').textContent = 'Opening ' + storeName;
+  document.getElementById('rx-store-sub').textContent  = 'Downloading RayXpress on the ' + storeName;
+  document.getElementById('rx-go-btn').href            = storeURL;
+
+  // On desktop swap button label and show both store options
+  if (!isMobile) {
+    document.getElementById('rx-store-name').textContent = 'Download RayXpress';
+    document.getElementById('rx-store-sub').textContent  = 'Available on iOS and Android';
+    document.getElementById('rx-go-btn').textContent     = '\uD83C\uDF4E App Store';
+    document.getElementById('rx-go-btn').href            = IOS_URL;
+    document.getElementById('rx-go-btn').setAttribute('target', '_blank');
+
+    // Insert a Google Play button next to it
+    var gpBtn = document.createElement('a');
+    gpBtn.href = ANDROID_URL;
+    gpBtn.target = '_blank';
+    gpBtn.textContent = '\u25B6 Google Play';
+    gpBtn.style.cssText = 'display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:#F0E8E0;padding:13px 28px;border-radius:100px;font-weight:600;font-size:.93rem;text-decoration:none;font-family:inherit;cursor:pointer;';
+    document.getElementById('rx-go-btn').parentNode.insertBefore(gpBtn, document.getElementById('rx-go-btn').nextSibling);
+  }
+
+  // Show overlay
+  var overlay = document.getElementById('rx-redirect');
+  overlay.style.display = 'flex';
+
+  // Countdown (5 → 0)
+  var ring      = document.getElementById('rx-ring');
+  var countEl   = document.getElementById('rx-count');
+  var secEl     = document.getElementById('rx-sec');
+  var remaining = 5;
+  var total     = 5;
+
+  // Ring starts full (offset 0 = fully drawn). As time passes, offset increases → ring drains.
+  ring.style.strokeDashoffset = '0';
+
+  var tick = setInterval(function(){
+    remaining--;
+    countEl.textContent = remaining;
+    secEl.textContent   = remaining;
+
+    // Drain the ring: offset goes from 0 to CIRCUM over 5 seconds
+    ring.style.strokeDashoffset = String(CIRCUM * (1 - remaining / total));
+
+    if (remaining <= 0) {
+      clearInterval(tick);
+      if (isMobile) {
+        window.location.href = storeURL;
+      } else {
+        // Desktop: open App Store in new tab, close overlay
+        window.open(IOS_URL, '_blank');
+        overlay.style.display = 'none';
+      }
+    }
+  }, 1000);
+
+  // "Open Store Now" — go immediately
+  document.getElementById('rx-go-btn').addEventListener('click', function(){
+    clearInterval(tick);
+    overlay.style.display = 'none';
+  });
+
+  // "Stay on Website" — dismiss and cancel
+  document.getElementById('rx-skip-btn').addEventListener('click', function(){
+    clearInterval(tick);
+    overlay.style.display = 'none';
+  });
+
+  // Hover effect for skip button
+  var skipBtn = document.getElementById('rx-skip-btn');
+  skipBtn.addEventListener('mouseenter', function(){ this.style.background='rgba(255,255,255,.12)'; this.style.color='#F0E8E0'; });
+  skipBtn.addEventListener('mouseleave', function(){ this.style.background='rgba(255,255,255,.06)'; this.style.color='#8A7A6E'; });
+
+})();
+</script>
 
 <script>
 // Custom cursor
@@ -976,7 +1162,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
 // Map dots
 const mg=document.getElementById('mapGrid');
-[0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,2,2,1,0,0,0,1,2,2,2,2,1,0,0,1,2,2,2,2,1,0,0,0,1,2,2,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0].forEach(v=>{const d=document.createElement('div');d.className='mdot'+(v===2?' a':v===1?' s':'');mg.appendChild(d)});
+[0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,2,2,1,0,0,0,0,1,2,2,2,2,1,0,0,1,2,2,2,2,1,0,0,0,1,2,2,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0].forEach(v=>{const d=document.createElement('div');d.className='mdot'+(v===2?' a':v===1?' s':'');mg.appendChild(d)});
 
 // Contact form
 function handleForm(b){b.textContent='Sending\u2026';b.style.background='#555';setTimeout(()=>{b.textContent='Message Sent \u2713';b.style.background='#166534';setTimeout(()=>{b.textContent='Send Message \u2192';b.style.background=''},3000)},1500)}
